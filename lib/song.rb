@@ -33,4 +33,10 @@ class Song
     self.all.each{|song| return song if song.name == name}
     false
   end 
+  
+  def self.find_or_create_by_name(name)
+    found = find_by_name(name)
+    return found if found != false 
+    
+  end
 end
