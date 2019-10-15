@@ -39,6 +39,5 @@ class Song
       return find_by_name(name)
     end
     create_by_name(name)
-    nil
   end
 end
